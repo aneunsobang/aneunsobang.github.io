@@ -12,6 +12,7 @@
             max-width: 400px;
             margin: 50px auto;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* 가운데 정렬 */
         }
 
         /* 레이블 스타일 */
@@ -57,12 +58,21 @@
             text-align: center;
             margin-bottom: 20px;
         }
+
+        /* 로고 이미지 스타일 */
+        .logo {
+            max-width: 100px; /* 로고 크기 */
+            margin-bottom: 20px; /* 폼과 간격 */
+        }
     </style>
 </head>
 <body>
 
     <!-- 폼 컨테이너 시작 -->
     <div class="form-container">
+        <!-- 로고 이미지 추가 -->
+        <img src="https://aneunsobang.github.io/repository-name/images/aneunsobang.jpg" alt="Logo" class="logo">
+        
         <h2 class="form-title">구독 취소</h2>
         <form action="https://script.google.com/macros/s/AKfycbzZlcIGicNLIaOcHd5Uh3R9voyJbVoZwPLL6XzkHb0x-ChejEuZAPoD-EzlZamllfkWhg/exec" method="POST">
             <label for="email">이메일 주소:</label>
@@ -73,3 +83,4 @@
 
 </body>
 </html>
+
