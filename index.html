@@ -12,7 +12,10 @@
             max-width: 400px;
             margin: 50px auto;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center; /* 가운데 정렬 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 수평 중앙 정렬 */
         }
 
         /* 레이블 스타일 */
@@ -20,13 +23,14 @@
             font-size: 18px;
             color: #333;
             font-weight: bold;
-            display: block;
             margin-bottom: 10px;
+            text-align: left; /* 레이블 텍스트는 왼쪽 정렬 */
+            width: 100%;
         }
 
         /* 입력 필드 스타일 */
         input[type="email"] {
-            width: 100%;
+            width: 100%; /* 가로 크기를 100%로 설정 */
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
@@ -43,7 +47,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 18px;
-            width: 100%;
+            width: 100%; /* 버튼도 100% 너비로 설정 */
         }
 
         /* 버튼 호버 효과 */
@@ -61,7 +65,7 @@
 
         /* 로고 이미지 스타일 */
         .logo {
-            max-width: 300px; /* 로고 크기 */
+            max-width: 400px; /* 로고 크기 */
             margin-bottom: 20px; /* 폼과 간격 */
         }
     </style>
